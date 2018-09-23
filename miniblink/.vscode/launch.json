@@ -1,0 +1,33 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+            
+    {
+      "name": "(gdb) Launch",  
+      "type": "cppdbg",
+      "request": "launch",
+      "miDebuggerPath": "arm-none-eabi-gdb",
+      "targetArchitecture": "arm",
+      "program": "${workspaceFolder}/miniblink.elf",
+      "args": [],
+      "stopAtEntry": false,
+      "cwd": "${workspaceRoot}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "setupCommands": [
+       { "text" : "target extended-remote /dev/ttyACM0"},
+       { "text" : "monitor tpwr disable"},
+       { "text" : "monitor tpwr enable"},
+       { "text" : "monitor connect_srst enable"},
+       { "text" : "monitor swdp_scan"},
+       { "text" : "attach 1"},
+       //{ "text" : "monitor option erase"},  //optional
+       //{ "text" : "monitor erase_mass"},    //optional
+       { "text" : "file ${workspaceFolder}/miniblink.elf"},
+       { "text" : "load"},
+       { "text" : "break main"}
+    ]
+    }
+    ]
+} 
