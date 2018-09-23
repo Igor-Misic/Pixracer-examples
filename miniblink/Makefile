@@ -53,12 +53,9 @@ ifeq ($(V),99)
 TGT_LDFLAGS		+= -Wl,--print-gc-sections
 endif
 
-
 all:
 	$(CC) $(TGT_CFLAGS) $(CFLAGS) -c miniblink.c
 	$(CC) miniblink.o $(TGT_LDFLAGS) $(LIB_DIR) $(LIBS) -o miniblink.elf 
-
-
 
 clean:
 	rm -f *.o *.elf
