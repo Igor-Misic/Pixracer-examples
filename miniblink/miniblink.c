@@ -3,7 +3,7 @@
  *
  * Copyright (C) 2009 Uwe Hermann <uwe@hermann-uwe.de>
  * Copyright (C) 2011 Stephen Caudle <scaudle@doceme.com>
- * Copyright (C) 2018 Igor Misic <igor.misic@gmail.com>
+ * Copyright (C) 2018 Igor Misic <igy1000mb@gmail.com>
  *
  * This library is free software: you can redistribute it and/or modify
  * it under the terms of the GNU Lesser General Public License as published by
