@@ -1,0 +1,18 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+            
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "servertype": "bmp",
+            "cwd": "${workspaceRoot}",
+            "executable": "timer.elf",
+            "name": "Debug (Black Magic Probe)",
+            "device": "STM32F427",
+            "powerOverBMP": "enable",
+            "BMPGDBSerialPort": "/dev/ttyBMP",
+            "targetId": 1
+        }
+    ]
+} 
