@@ -32,7 +32,7 @@
 #define FMU_CH1_PIN GPIO14
 
 /* Morse standard timings */
-#define ELEMENT_TIME 500
+#define ELEMENT_TIME 5
 #define DIT (1*ELEMENT_TIME)
 #define DAH (3*ELEMENT_TIME)
 #define INTRA (1*ELEMENT_TIME)
@@ -42,24 +42,24 @@
 uint32_t frequency_sel = 0u;
 
 uint16_t frequency_sequence[] = {
-	DIT,
-	INTRA,
-	DIT,
-	INTRA,
-	DIT,
-	INTER,
-	DAH,
-	INTRA,
-	DAH,
-	INTRA,
-	DAH,
-	INTER,
-	DIT,
-	INTRA,
-	DIT,
-	INTRA,
-	DIT,
-	WORD,
+	DIT,   // 1 UP 
+	INTRA, // 1 DOWN
+	DIT,   // 1 UP
+	INTRA, // 1 DOWN
+	DIT,   // 1 UP
+	INTER, // 3 DOWN
+	DAH,   // 3 UP
+	INTRA, // 1 DOWN
+	DAH,   // 3 UP
+	INTRA, // 1 DOWN
+	DAH,   // 3 UP
+	INTER, // 3 DOWN
+	DIT,   // 1 UP
+	INTRA, // 1 DOWN
+	DIT,   // 1 UP
+	INTRA, // 1 DOWN
+	DIT,   // 1 UP
+	WORD,  // 7 DOWN
 };
 
 static void clock_setup(void)
