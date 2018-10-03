@@ -1,6 +1,7 @@
 This example needs a [Cortex-debug](https://marketplace.visualstudio.com/items?itemName=marus25.cortex-debug) VScode plugin installed.
 
-In the time of writing this README, Cortex-debug version 0.1.21 doesn't support power over Black Magic Probe, so you will need to power it externally or you will need to install my version of cortex-debug. 
+In the time of writing this README, Cortex-debug version 0.1.21 doesn't support power over Black Magic Probe, so you will need to power it externally or you will need to install my version of [cortex-debug](https://drive.google.com/open?id=1hWkujxhpPnVRY6ZSCdt21FEAG5QkEQC9). 
+
 Here in this blog post, it is described how to do it. TODO: add a link to the blog post
 
 
