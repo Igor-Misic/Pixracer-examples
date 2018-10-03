@@ -9,7 +9,7 @@
             "cwd": "${workspaceRoot}",
             "executable": "timer.elf",
             "name": "Debug (Black Magic Probe)",
-            "device": "STM32F427",
+            "device": "STM32F103RB",
             "powerOverBMP": "enable",
             "BMPGDBSerialPort": "/dev/ttyBMP",
             "targetId": 1
