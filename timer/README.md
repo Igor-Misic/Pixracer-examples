@@ -2,7 +2,8 @@ This example needs a [Cortex-debug](https://marketplace.visualstudio.com/items?i
 
 In the time of writing this README, Cortex-debug version 0.1.21 doesn't support power over Black Magic Probe, so you will need to power it externally or you will need to install my version of [cortex-debug](https://drive.google.com/open?id=1hWkujxhpPnVRY6ZSCdt21FEAG5QkEQC9). 
 
-Here in this blog post, it is described how to do it. TODO: add a link to the blog post
+If you are Linux user you need to unpack this zip in to /home/your_user_name/.vscode/extensions/ and restart VSCode.
+
 
 
 Schema and wiring:
