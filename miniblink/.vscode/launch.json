@@ -16,7 +16,7 @@
       "externalConsole": true,
       "MIMode": "gdb",
       "setupCommands": [
-       { "text" : "target extended-remote /dev/ttyACM0"},
+       { "text" : "target extended-remote /dev/ttyBMP"},
        { "text" : "monitor tpwr disable"},
        { "text" : "monitor tpwr enable"},
        { "text" : "monitor connect_srst enable"},
@@ -26,6 +26,7 @@
        //{ "text" : "monitor erase_mass"},    //optional
        { "text" : "file ${workspaceFolder}/miniblink.elf"},
        { "text" : "load"},
+       { "text" : "set mem inaccessible-by-default off"},
        { "text" : "break main"}
     ]
     }
