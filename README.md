@@ -27,6 +27,10 @@ and after editing, do this command:
 After you reconnect your BMP, you can use ttyBMP instead ttyACMx. 
 
 
+### Building from VSCode
+
+Press ctrl + B and select build or clean. 
+
 
 
 
