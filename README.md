@@ -2,7 +2,7 @@
 
 Pixracer examples is repo with examples for [Pixracer](https://docs.px4.io/en/flight_controller/pixracer.html) based on [libopencm3](https://github.com/libopencm3).
 
-Examples are done with [Black Magic probe debugger](https://github.com/blacksphere/blackmagic/wiki) and [Visual Studio Code](https://code.visualstudio.com/) editor (VSC). Examples include json files with building and debugging settings for VSC.
+Examples are done with [Black Magic probe debugger](https://github.com/blacksphere/blackmagic/wiki) and Eclipse or [Visual Studio Code](https://code.visualstudio.com/) editor (VSC). Examples include json files with building and debugging settings for VSC.
 
 ### Connecting Pixracer with Black Magic Probe
 
