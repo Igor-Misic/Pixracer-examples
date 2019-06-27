@@ -6,3 +6,5 @@ miniblink/miniblink\.elf
 miniblink/miniblink\.o
 
 \.directory
+
+dshot/build/
