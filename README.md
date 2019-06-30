@@ -1,6 +1,6 @@
 ### About
 
-Pixracer examples is repo with examples for [Pixracer](https://docs.px4.io/en/flight_controller/pixracer.html) hardware based on [libopencm3](https://github.com/libopencm3). This project is not connected to the PX4 project but it will help you to understand the basics of PX4 hardware and bootloader software. 
+Pixracer examples is repo with examples for [Pixracer](https://docs.px4.io/en/flight_controller/pixracer.html) hardware based on [libopencm3](https://github.com/libopencm3) or STM32 HAL drivers. This project is not connected to the PX4 project but it will help you to understand the basics of PX4 hardware and bootloader software. 
 
 Examples are done with [Black Magic probe debugger](https://github.com/blacksphere/blackmagic/wiki) and Eclipse or [Visual Studio Code](https://code.visualstudio.com/) editor (VSC). Examples include json files with building and debugging settings for VSC.
 
