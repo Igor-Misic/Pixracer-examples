@@ -52,6 +52,11 @@ int main(void)
     MX_TIM1_Init();
     MX_TIM2_Init();
 
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
+    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
+
     HAL_TIM_Base_Start_IT(&htim2);
 
     throttle = 0;
@@ -93,11 +98,6 @@ int main(void)
 void TIM2_IRQHandler(void)
 {
     HAL_TIM_IRQHandler(&htim2);
-
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_1);
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_2);
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_3);
-    HAL_TIM_PWM_Start(&htim1, TIM_CHANNEL_4);
 
     HAL_TIM_DMABurst_WriteStart(&htim1, TIM_DMABASE_CCR1, TIM_DMA_UPDATE, dmaBurstBuffer, TIM_DMABURSTLENGTH_4TRANSFERS, MOTORS_NUMBER*BUFFER_SIZE);
 
@@ -233,7 +233,7 @@ static void MX_TIM1_Init(void)
     Error_Handler();
     }
     sBreakDeadTimeConfig.OffStateRunMode = TIM_OSSR_ENABLE;
-    sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_ENABLE;
+    sBreakDeadTimeConfig.OffStateIDLEMode = TIM_OSSI_DISABLE;
     sBreakDeadTimeConfig.LockLevel = TIM_LOCKLEVEL_OFF;
     sBreakDeadTimeConfig.DeadTime = 0;
     sBreakDeadTimeConfig.BreakState = TIM_BREAK_DISABLE;
